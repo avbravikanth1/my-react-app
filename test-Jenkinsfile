@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage("SCM Checkout") {
             steps {
-                git branch: 'main',
+                git branch: 'master',
                     credentialsId: "github-access",                
                     url: "https://github.com/avbravikanth1/my-react-app.git"            
             }
