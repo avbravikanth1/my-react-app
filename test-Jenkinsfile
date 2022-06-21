@@ -11,9 +11,14 @@ pipeline {
         }
         stage('Build') {
             steps {
-                sh "npm install"
+                sh "~/Desktop/ravi/my-react-app"
                 
             }
         }
         
 }
+/*stage('Clean Up') {
+            steps {
+                sh "sh script.sh"
+            }
+        }*/
