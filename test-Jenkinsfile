@@ -12,7 +12,10 @@ pipeline {
         
           stage('Build') {
             steps {
+                sh"npm run remove"
                 sh "npm install"
+                sh "run clean"
+                sh"npm run build"
                
             }
         
