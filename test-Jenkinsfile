@@ -11,7 +11,10 @@ pipeline {
         }
         stage('Build') {
             steps {
-                sh "~/Desktop/ravi/my-react-app"
+                sh "npm run remove"
+                sh "npm install"
+                sh "npm run clean"
+                sh "nmp run build"
                 
             }
         }
