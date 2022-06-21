@@ -9,16 +9,14 @@ pipeline {
                     url: "https://github.com/avbravikanth1/my-react-app.git"            
             }
         }
-        stage('Build') {
+        stages {
+          stage('Build') {
             steps {
-                sh "npm run remove"
                 sh "npm install"
-                sh "npm run clean"
-                sh "nmp run build"
-                
+               
             }
         }
-        
+        }
 }
 /*stage('Clean Up') {
             steps {
